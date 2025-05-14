@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Cinzel Decorative', serif;
+  }
+  
+  .hero {
+    background: url('../img/fundo-restaurante.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  .logo::first-letter {
+    color: gold;
+  }
+  
+  .menu-link a {
+    background-color: #c0392b;
+    padding: 1em 2em;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .detalhe-img {
+    transition: transform 0.3s ease-in-out;
+  }
+  .detalhe-img:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  
+  .blink {
+    animation: blink 1s infinite;
+  }
+  
